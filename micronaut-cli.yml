@@ -1,0 +1,6 @@
+applicationType: default
+defaultPackage: com.sap
+testFramework: junit
+sourceLanguage: groovy
+buildTool: gradle
+features: [app-name, data, data-jdbc, gradle, groovy, groovy-application, h2, http-client, jdbc-hikari, junit, logback, netty-server, readme, security-annotations, security-session, shade, views-thymeleaf, yaml]

@@ -1,0 +1,14 @@
+micronaut:
+  application:
+    name: sflight
+  security:
+    authentication: session
+    enabled: true
+    intercept-url-map:
+      - pattern: /static/*
+        http-method: GET
+        access:
+          - isAnonymous()
+    redirect:
+      login-success: "/home"
+      login-failure: "/"

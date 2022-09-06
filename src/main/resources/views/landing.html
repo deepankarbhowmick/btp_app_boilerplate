@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>App</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="static/favicon-16x16.png">
+</head>
+<body onload="document.forms[0].submit()" style="background:blue; color:white;">
+<p>Please wait...</p>
+<form method="post" th:attr="action=${uri}+'/login'">
+    <input type="hidden" name="username" id="username" th:value="${token}"/>
+    <input type="hidden" name="password" id="password" th:value="${token}"/>
+</form>
+</body>
+</html>
